@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="cat.jpg" alt="고양이" />
+    <button type="button" onclick="changeImg()">변경</button>
+    <script>
+      function changeImg() {
+        let imgex = document.querySelector("img");
+        imgex.src = "cat2.gif";
+        imgex.alt = "고양이2";
+      }
+    </script>
+  </body>
+</html>

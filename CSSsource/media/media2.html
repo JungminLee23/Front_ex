@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Open Sans";
+        background-color: #ecf0f1;
+      }
+      .container {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+      }
+      .flexbg {
+        display: flex;
+      }
+      .flexbg main {
+        order: 2;
+        background-color: white;
+        padding: 2px;
+      }
+      .flexbg .left {
+        order: 1;
+        background-color: skyblue;
+      }
+      .flexbg .right {
+        order: 3;
+        background-color: #34495e;
+      }
+      /* 태블릿 화면 */
+      @media screen and (max-width: 760px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+        .flexbg .sidebar {
+          width: 50%;
+        }
+        .flexbg .left {
+          order: 2;
+        }
+        .flexbg .right {
+          order: 3;
+        }
+      }
+
+      /* 스마트폰 화면 */
+      @media screen and (max-width: 480px) {
+        .flexbg {
+          flex-wrap: wrap;
+          flex-direction: column;
+        }
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+        .flexbg .sidebar {
+          width: 100%;
+        }
+        .flexbg .left {
+          order: 2;
+        }
+        .flexbg .right {
+          order: 3;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container flexbg">
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+          voluptatem iusto labore magni assumenda! Adipisci consequatur,
+          repellendus, at iure saepe perspiciatis deserunt eius minima tenetur
+          sequi debitis exercitationem laborum totam beatae cum. Adipisci
+          molestiae architecto deserunt atque, ad ut mollitia harum ab, illum
+          pariatur nostrum beatae. Dolor excepturi quod voluptatibus nisi saepe,
+          cumque pariatur. Dolor qui dignissimos asperiores ipsam? Commodi
+          ducimus neque eos asperiores, iusto eveniet corrupti! Aperiam earum
+          sed labore at laboriosam optio doloribus, voluptatem necessitatibus,
+          dicta atque nulla! Quos quia sequi soluta, facere eaque minima culpa
+          repellat eum dicta earum labore, minus laborum mollitia numquam
+          consectetur rem dolorem.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi minima
+          sed enim id quos labore sapiente facilis vero! Exercitationem, tempore
+          fugit! Accusantium repellat, blanditiis ratione accusamus libero
+          temporibus consectetur quidem eos, reiciendis delectus optio deserunt
+          dolore numquam vitae quo repudiandae quas unde fugiat cupiditate iure
+          ipsam, minus exercitationem! Eveniet magni nemo esse quas odit sint
+          facere, animi vero velit maiores itaque vel eum quae ullam? Recusandae
+          quibusdam alias itaque dolorem, voluptatum sed qui officiis
+          praesentium libero cum et eaque sequi quasi laudantium eligendi
+          dolorum. Est nihil corrupti laboriosam ullam repellat recusandae,
+          necessitatibus vel dolor quisquam possimus, nam ducimus modi facilis?
+        </p>
+      </main>
+      <aside class="sidebar left">
+        <p>You might have some latest posts here on the left</p>
+      </aside>
+      <aside class="sidebar right">
+        <p>You might have some lastes posts here on the right</p>
+      </aside>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background: #333333;
+        font-family: Georgia, serif;
+        font-size: 16px;
+        color: #444;
+      }
+      .container {
+        display: flex;
+      }
+      .main-content,
+      .sidebar {
+        background-color: white;
+        padding: 6px;
+        margin: 10px;
+      }
+      .panel {
+        background-color: white;
+        padding: 20px;
+        margin: 10px;
+      }
+      .main-content {
+        flex: 2;
+      }
+      .sidebar {
+        flex: 1;
+      }
+      /* flex ---> 비율 준 것 || 2:1정도 비율을 준 것 */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="main-content">
+        <div class="panel">
+          <h1>Main Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            atque sed magnam, nesciunt, provident repellendus hic a repudiandae,
+            dolorem accusantium ipsam illum illo! Perspiciatis ipsum
+            necessitatibus alias vero? Commodi, nemo.
+          </p>
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/laptop001.jpg"
+            alt=""
+          />
+          <h3>Sub Title</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
+            perspiciatis laudantium magni architecto aliquam dolorem molestias
+            blanditiis, neque quis tenetur eos, dignissimos dolor similique
+            quaerat fuga excepturi explicabo inventore provident?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet cumque
+            eveniet ducimus officiis. At iste ratione a. Nobis molestiae illo
+            vero temporibus numquam ipsum, molestias reiciendis, eveniet,
+            doloremque magni quibusdam.
+          </p>
+        </div>
+      </section>
+      <aside class="sidebar">
+        <div class="panel">
+          <h3>Item 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+            laboriosam velit non similique, vitae recusandae atque dolore,
+            tenetur expedita voluptas dolorum incidunt cum. Minus magni error
+            odio, explicabo perspiciatis iste.
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+            laboriosam velit non similique, vitae recusandae atque dolore,
+            tenetur expedita voluptas dolorum incidunt cum. Minus magni error
+            odio, explicabo perspiciatis iste.
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+            laboriosam velit non similique, vitae recusandae atque dolore,
+            tenetur expedita voluptas dolorum incidunt cum. Minus magni error
+            odio, explicabo perspiciatis iste.
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item 4</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+            laboriosam velit non similique, vitae recusandae atque dolore,
+            tenetur expedita voluptas dolorum incidunt cum. Minus magni error
+            odio, explicabo perspiciatis iste.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- name 속성 : 전역속성 / 서버단에서 아주 중요하게 사용함-->
+
+    <ul name="ulname">
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+    </ul>
+    <script>
+      //name으로 찾기
+      let ul = document.getElementsByName("ulname");
+      console.log(ul);
+
+      //내용만 가져오고 싶다면
+      console.log(ul[0].children[1].innerText);
+    </script>
+  </body>
+</html>

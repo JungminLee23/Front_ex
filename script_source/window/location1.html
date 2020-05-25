@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="button" value="클릭" onclick="test()" />
+    <script>
+      function test() {
+        //페이지를 이동시킴
+        // location.href = "http://www.naver.com";
+
+        location.replace("http://www.naver.com");
+
+        // 원래는 window.location.href =~으로 감, 근데 window.은 생략 가능
+        //location은 위치 이동시킴
+
+        console.log(location.port);
+        console.log(location.protocol);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid #555555;
+        /* 색상 표기 시 인접한 두 개가 중복인 숫자일 경우 생략 가능
+        즉, 저 555555는 555로 써도 됨. */
+        outline: none;
+      }
+
+      input:focus {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="">First Name</label>
+        <input type="text" name="firstName" id="fname" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+      </div>
+    </form>
+  </body>
+</html>

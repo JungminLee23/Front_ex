@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //스크립트 문 안에서 문서요소를 생성해서 삽입
+      //img 태그 <img src = '' alt=''>
+      let imgex = document.createElement("img"); //<img></img>
+
+      //속성 넣기
+      // 1번방법
+      imgex.setAttribute("src", "cat.jpg");
+      imgex.setAttribute("alt", "고양이");
+
+      // 2번 방법
+      imgex.src = "cat.jpg";
+      imgex.alt = "고양이";
+      document.body.appendChild(imgex); //현재 이 문서의 body 태그 안에 자식으로 붙여넣기 해라
+    </script>
+  </body>
+</html>

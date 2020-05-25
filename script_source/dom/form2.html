@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="myform">
+        <div>
+            <label for="num1">첫번째 정수</label>
+            <input type="text" name="num1" id="num1">
+        </div>
+        <div>
+            <label for="num2">두번째 정수</label>
+            <input type="text" name="num2" id="num2">
+        </div>
+        <div>
+            <label for="result">결과</label>
+            <input type="text" name="result" id="result">
+        </div>
+        <div>
+            <button type="button" onclick="calc()">더하기</button>
+        </div>
+    </form>
+    <script>
+        function calc(){
+            //num1, num2 에 있는 값 가져와서
+            let num1 = parseInt(document.querySelector("#num1").value);
+            let num2 = parseInt(document.querySelector("#num2").value);
+            //더하기를 한 후 결과를 
+            //result에 넣어서 보여주기
+            document.querySelector("#result").value=(num1+num2);
+        }
+    </script>
+</body>
+</html>

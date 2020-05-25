@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .html5news-slide {
+        border: 2px solid green;
+        width: 800px;
+        height: 350px;
+        margin: 0 auto;
+        padding: 10px;
+        position: relative;
+      }
+      .html5news-slide img {
+        float: left;
+      }
+
+      .controls a {
+        background-color: black;
+        line-height: 50px;
+        color: #fff;
+        white-space: nowrap;
+        display: block;
+        text-align: center;
+      }
+
+      .prev {
+        position: absolute;
+        top: 50%;
+        right: 100%;
+      }
+      .next {
+        position: absolute;
+        left: 100%;
+        top: 50%;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="html5news-slide clearfix">
+      <img src="../images/cat.gif" alt="" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+        distinctio rem vel at natus rerum voluptas maxime quibusdam optio earum
+        magni libero, pariatur ea? Alias doloremque repellat consectetur itaque
+        repudiandae aliquam optio laboriosam maiores quia. Illum dicta magni
+        commodi inventore itaque corrupti ducimus at pariatur, aliquam ipsam,
+        similique earum suscipit sequi quisquam reiciendis rerum iste nesciunt.
+        Possimus consequuntur, consectetur beatae deserunt minima excepturi ea
+        maxime earum. Suscipit ipsum qui tempore asperiores veniam molestias.
+        Itaque ipsum doloremque eaque eos soluta officiis! Fugiat provident
+        cupiditate itaque, tenetur nihil ipsa a omnis corrupti! Dolores,
+        adipisci. Dolor ex aliquam, deleniti amet nesciunt placeat blanditiis.
+      </p>
+      <div class="controls">
+        <a href="#" class="prev">Previous Project</a>
+        <a href="#" class="next">Next Project</a>
+      </div>
+    </div>
+  </body>
+</html>
