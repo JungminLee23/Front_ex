@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      type="radio"
+      name="gender"
+      id=""
+      value="남"
+      onchange="genderValue(this.value)"
+    />남
+    <input
+      type="radio"
+      name="gender"
+      id=""
+      value="여"
+      onchange="genderValue(this.value)"
+    />여
+    <div>
+      <input
+        type="radio"
+        name="gender1"
+        id=""
+        value="남"
+        onchange="genderValue2()"
+      />남
+      <input
+        type="radio"
+        name="gender1"
+        id=""
+        value="여"
+        onchange="genderValue2()"
+      />여
+    </div>
+    <script>
+      function genderValue(gender) {
+        //사용자가 선택한 성별 가져오기
+        //1번방법
+        console.log(gender);
+      }
+      function genderValue2() {
+        //2번방법
+        let gender = document.querySelector("input[name='gender1']:checked")
+          .value;
+        console.log(gender);
+      }
+    </script>
+  </body>
+</html>
