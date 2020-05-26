@@ -9,24 +9,12 @@
     <h2>클릭하면 사라집니다.</h2>
     <p class="paral">이것은 문단입니다.</p>
     <p id="para2">이것은 두번째 문단입니다.</p>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- 위치 중요 -->
     <script>
-      // $ --> jQuery
-      $(function () {
-        // h2 영역 찾기
-        $("h2").click(function () {
-          //onclick
-          $(this).hide();
-        });
-        $(".paral").click(function () {
-          $(this).css("color", "#669900");
-        });
-        $("#para2").click(function () {
-          //아이디 부여된 것
-          $(this).hide();
-        });
+      $("h2, .paral, #para2").click(function () {
+        $("h2").css("color", "red");
+        $(".paral").css("border", "1px solid blue");
+        $("#para2").hide();
       });
     </script>
   </body>
