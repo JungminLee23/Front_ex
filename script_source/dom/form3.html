@@ -6,6 +6,12 @@
     <title>Document</title>
   </head>
   <body>
+    <h3>숫자 맞추기 게임</h3>
+    <p>
+      이 게임은 컴퓨터가 생성한 숫자를 맞추는 게임입니다.
+      <br />
+      숫자는 1~100 사이에 있습니다.
+    </p>
     <form action="">
       <div>
         <label for="num1">숫자</label>
@@ -21,5 +27,13 @@
         <input type="text" id="hint" name="hint" readonly />
       </div>
     </form>
+    <script>
+      let nGuess = 0; //추측횟수
+
+      //컴퓨터가 생성한 임의의 숫자.
+      const random = Math.floor(Math.random() * 100) + 1;
+      console.log(random);
+      function guess() {}
+    </script>
   </body>
 </html>
