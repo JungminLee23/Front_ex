@@ -16,10 +16,10 @@
       <div>
         <label for="num1">숫자</label>
         <input type="text" id="num1" name="num1" />
-        <input type="button" value="확인" />
+        <input type="button" value="확인" onclick="guess1()" />
       </div>
       <div>
-        <label for="guess">추측획수</label>
+        <label for="guess">추측횟수</label>
         <input type="text" id="guess" name="guess" readonly />
       </div>
       <div>
@@ -27,13 +27,32 @@
         <input type="text" id="hint" name="hint" readonly />
       </div>
     </form>
+
     <script>
       let nGuess = 0; //추측횟수
 
       //컴퓨터가 생성한 임의의 숫자.
       const random = Math.floor(Math.random() * 100) + 1;
       console.log(random);
-      function guess() {}
+      function guess1() {
+        //사용자가 입력한 값을 가져와서
+        //컴퓨터가 생성한 임의의 숫자랑 비교한 후
+        //추측값 일치 /추측값보다 작음/ 추측값보다 큼
+        //메세지 힌트에 보여주고
+        //추측횟수를 증가시켜 몇 번만에 맞췄는지 알려주기
+        nGuess += 1;
+        let guessnum = parseInt(document.querySelector("#num1").value);
+        let hint;
+        if (random > guessnum) {
+          hint = "추측 값보다 큼";
+        } else if (random < guessnum) {
+          hint = "추측값 보다 작음";
+        } else {
+          hint = "추측값 일치";
+        }
+        document.querySelector("#hint").value = hint;
+        document.querySelector("#guess").value = nGuess;
+      }
     </script>
   </body>
 </html>
