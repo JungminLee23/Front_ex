@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="header1">Header1</h1>
+    <h1 id="header2">Header2</h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      // 문서 객체가 아이디가 부여된 상태라면
+      let header1 = $("#header1");
+      console.log(header1);
+      console.log(header1.text()); // 텍스트 노드 값 가져오기
+
+      let header2 = $("#header2");
+      header2.html("<p style = 'color:red'>with getElementById()");
+      //태그를 쓰고 싶다면 innerHTML로 써야함.
+      //순수 Text만 넣고 싶다면 innerText로 써야 함
+    </script>
+  </body>
+</html>

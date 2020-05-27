@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      //부여 된 아이디가 없을 때 : 태그 이름으로 찾기
+      let ul = $("ul");
+      console.log(ul);
+      console.log(ul.children());
+
+      //내용만 가져오고 싶다면
+      // console.log(ul[0].children[1].innerText);
+    </script>
+  </body>
+</html>
